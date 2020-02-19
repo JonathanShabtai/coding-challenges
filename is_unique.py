@@ -14,7 +14,7 @@ def unique(s1):
                 return False
     return True
 
-# Hash Table O(N) run time, but O(N) space:
+# Hash Table O(N) run time, O(1) space (assuming ASCII characters):
 
 def unique_hash(s1):
     checker = {}
@@ -25,9 +25,6 @@ def unique_hash(s1):
         if checker[char] == 2:
             return False
     return True
-
-# No extra space:
-
 
 def test_answer():
     assert unique('abc') == True
