@@ -4,10 +4,10 @@ def replace_spaces(input_string, s):
     while i < s:
         if input_string[i] == ' ':
             answer += '%20'
-            i += 1
         else:
             answer += input_string[i]
-            i += 1
+        i += 1
+
     return answer
 
 def replace_space_one_liner(input_string, s):
